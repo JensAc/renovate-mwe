@@ -12,5 +12,10 @@
   "enabledManagers": ["flux", "regex"],
   "prCreation": "immediate",
   "semanticCommits": "disabled",
-  "addLabels": ["version-bump"]
+  "addLabels": ["version-bump"],
+  "postUpgradeTasks": {
+    "commands": ["./hack/export-renovate-releasenotes.sh {{{depName}}} {{{currentVersion}}} {{{newVersion}}} {{{body}}} >> release-notes/next.md"],
+    "fileFilters": ["release-notes/next.md"],
+    "executionMode": "update"
+  }
 }
