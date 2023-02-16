@@ -1,0 +1,16 @@
+{
+  "baseBranches": [
+    "main",
+  ],
+  "dependencyDashboard": true,
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 1,
+  "lockFileMaintenance": {
+    "enabled": false
+  },
+  "includeForks": true,
+  "enabledManagers": ["flux", "regex"],
+  "prCreation": "immediate",
+  "semanticCommits": "disabled",
+  "addLabels": ["version-bump"]
+}
