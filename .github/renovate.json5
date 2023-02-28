@@ -17,7 +17,7 @@
   "semanticCommits": "disabled",
   "addLabels": ["version-bump"],
   "postUpgradeTasks": {
-    "commands": ["./hack/export-renovate-releasenotes.sh {{{depName}}} {{{currentVersion}}} {{{newVersion}}} {{{body}}} >> release-notes/next.md"],
+    "commands": ["./hack/export-renovate-releasenotes.sh {{{depName}}} {{{currentVersion}}} {{{newVersion}}} {{{packageName}}} {{{packageFileDir}}} {{{datasource}}} {{{sourceRepo}}} {{{sourceRepoName}}} {{{sourceRepoOrg}}} {{{url}}} {{{body}}} >> release-notes/next.md"],
     "fileFilters": ["release-notes/next.md"],
     "executionMode": "update"
   }
