@@ -5,6 +5,9 @@
   "dependencyDashboard": true,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 1,
+  "flux": {
+			"fileMatch": ["helm-resources/.*.yaml", "flux-system/gotk-components.yaml"]
+  },
   "lockFileMaintenance": {
     "enabled": false
   },
